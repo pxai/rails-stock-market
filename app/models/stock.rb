@@ -20,7 +20,8 @@ class Stock < ApplicationRecord
     return "#{closing_price} (Closing)" if closing_price
 
     opening_price = StockQuote::Stock.quote(ticker).open
-    return "#{opening_price} (Opening)" if opening_price  'Unavailable'
+    return "#{opening_price} (Opening)" if opening_price
+    'Unavailable'
 
   end
 end

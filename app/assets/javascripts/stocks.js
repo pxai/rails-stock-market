@@ -4,7 +4,6 @@ $(document).ready(function() {
 
 })
 
-then above it we type in:
 
 var init_stock_lookup;
 
